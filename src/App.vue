@@ -1,7 +1,11 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import router from './router';
+import { useProductStore } from './stores/product';
+import { useCategoryStore } from './stores/catogory';
 
+const productStore = useProductStore();
+const categoryStore = useCategoryStore();
 </script>
 
 <template>
